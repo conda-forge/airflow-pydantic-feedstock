@@ -1,6 +1,6 @@
 context:
   name: airflow-pydantic
-  version: "1.2.10"
+  version: "1.2.13"
   python_min: '3.11'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-pydantic/airflow_pydantic-${{ version }}.tar.gz
-  sha256: e6a1fb5b85d11cea3495f751e2a6d0338cc201f5eb07166f20baec653d5168ff
+  sha256: 3993a6ee07b8ededf8c47e6993fb1be52a98daaea621b331f69a57f4033ad749
 
 build:
   number: 0
