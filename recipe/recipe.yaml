@@ -1,7 +1,6 @@
 context:
   name: airflow-pydantic
-  version: "1.6.8"
-  python_min: '3.11'
+  version: "1.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-pydantic/airflow_pydantic-${{ version }}.tar.gz
-  sha256: 08ac410466c76e36ddc0b0b29e7d5387a54601b1371fb068465a57f45405bb94
+  sha256: 7a1632b626b12d18082349cb05317bd3de8b7f5bf1d9b4dcccd344005ded9938
 
 build:
   number: 0
@@ -23,9 +22,8 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - paramiko <4
     - pendulum
-    - pkn >=0.1.3
+    - pkn >=0.1.3,!=0.4.0,!=0.4.1
     - pydantic >=2
     - pydantic-extra-types
     - pytz
